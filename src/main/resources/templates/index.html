@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inicio</title>
+    </head>
+    <body>
+        <h1 th:text="${msg}"></h1>
+
+        <!-- Usar and y or -->
+        <!--
+        <div th:if="${!persons.empty}">
+            <table border=".5">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>LastName</th>
+                    <th colspan="2">Options</th>
+                </tr>
+                <tr th:each="person : ${persons}">
+                    <td th:text="${person.id}"></td>
+                    <td th:text="${person.name}"></td>
+                    <td th:text="${person.lastname}"></td>
+                    <td> <button><a th:text="@{Editar}" th:href="@{/editar/} + ${person.id}"></a></button> </td>
+
+                    <td> <button><a th:text="@{Eliminar}" th:href="@{/eliminar(id=${person.id})}"></a></button> </td>
+                </tr>
+            </table>
+        </div>
+
+
+    <a th:href = "@{/agregar}">Agregar usuario</a>
+    -->
+
+    </body>
+</html>
